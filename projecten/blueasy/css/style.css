@@ -1,0 +1,294 @@
+/*CSS VARIABELEN*/
+:root{
+    --be-blue:#4bcaff;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+/** GENERAL CSS SETTINGS **/
+.d-flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction:column;
+}
+.flex-row{
+    flex-direction:row;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-center{
+    justify-content:center;
+}
+.justify-content-end{
+    justify-content:flex-end;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+.justify-content-around{
+    justify-content:space-around;
+}
+.align-items-center{
+    align-items:center;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+.text-center{
+    text-align:center;
+}
+
+.w-25{
+    width:25%;
+}
+.w-40{
+    width:40%;
+}
+.w-50{
+    width:50%;
+}
+.w-60{
+    width:60%;
+}
+.w-75{
+    width:75%;
+}
+.w-100{
+    width:100%;
+}
+/*BEGIN FONTS*/
+@font-face {
+    font-family:suib;
+    src:url('../webfonts/SegoeUIBold.woff');
+}
+@font-face {
+    font-family:sul;
+    src:url('../webfonts/SegoeUILight.ttf');
+}
+@font-face {
+    font-family:sui;
+    src:url('../webfonts/SegoeUI.woff');
+}
+/*END FONTS*/
+
+/**INITIALIZE BODY**/
+body{
+    width:1920px;
+    margin:0 auto; /* centreren scherm */
+}
+
+/** HEADER & NAVMENU **/
+#fullheader{
+    background:url('../images/background.png') no-repeat;
+}
+#headertop{
+    background: rgba(57,68,75,20%);
+    font-family:suib;
+    padding:55px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+nav{
+    width:1175px;
+    margin:0 auto;
+}
+#brand{
+    font-size:1.875rem;
+    color:#fff;
+}
+#brand span{
+    color:#4bcaff;
+}
+ul{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none; /*onderlijnen weg*/
+    color:#fff;
+    font-size:14px;
+    padding:10px 18px;
+    border:2px solid transparent;
+    text-transform:uppercase; /*hoofdletters*/
+}
+ul li a:hover{
+    padding:10px 18px;
+    border:2px solid var(--be-blue);
+    color: var(--be-blue);
+}
+/*HERO*/
+#hero{
+    font-family:sul;
+    font-size:2.625rem;
+    color:white;
+    text-transform:uppercase;
+    padding:249px 0px;
+}
+#hero div:first-child{
+    width:36%;
+}
+#hero div:last-child{
+    width:50%;
+}
+#hero div:first-child, #hero div:last-child{
+    background: rgba(57,68,75,80%);
+    margin:5px 0px;
+}
+#hero div p{
+    padding:0px 5px;
+}
+
+/*services*/
+#services{
+    background:var(--be-blue);
+    color:#fff;
+}
+#services div{
+    width:1175px;
+    margin:0px auto;
+}
+#services h1{
+    font-family:suib;
+    font-size:30px;
+    padding-bottom:8px;
+    margin-bottom:23px;
+}
+#services h1 span{
+    text-underline-offset: 8px;
+    text-decoration: underline;
+}
+#services h2{
+    font-family:suib;
+    font-size:24px;
+    padding-top:23px;
+    padding-bottom:18px;
+    text-transform:uppercase;
+}
+#services p{
+    font-family:suib;
+    font-size:12px;
+}
+
+
+#serviceswrapper{
+    padding:40px 0px !important;
+}
+#services article{
+    width:320px;
+}
+
+#default{
+    background:#515f67;
+}
+#defaultcontent{
+    width:1415px;
+    margin:0 auto;
+    color:white;
+    padding-left:120px;
+}
+#defaultcontent h2{
+    font-family:sul;
+    font-size:30px;
+}
+#defaultcontent p{
+    font-family:sui;
+    font-size:14px;
+}
+#topp{
+    padding-top:75px;
+    padding-bottom:35px;
+}
+#bottomp{
+    padding-bottom:60px;
+}
+#line{
+    border-bottom: 1px solid white !important;
+    width: 60px !important;
+    margin-left:-10px;
+}
+#default article{
+    padding-top: 110px;
+    padding-bottom: 125px;
+}
+#contact{
+    background: #5094f2;
+    color:#fff;
+    font-size:20px;
+    padding:50px 0px;
+    font-family:"Arial";
+}
+#contactwrapper{
+    width:1175px;
+    margin:0 auto;
+}
+#contactwrapper a{
+    font-weight:bold;
+    text-decoration:none;
+}
+#contactwrapper img{
+    border:2px solid white;
+    padding:2px;
+}
+.form-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 5px solid #6cb2eb;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #6cb2eb;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4f96c5;
+}
+input[type="checkbox"] {
+    appearance: none; /* Verberg de standaard checkbox */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6cb2eb;
+  /*  border-radius: 50%; /* Maak een ronde checkbox */
+    cursor: pointer;
+    outline: none;
+}
+input[type="checkbox"]:checked {
+    background-color: #6cb2eb;
+}
+

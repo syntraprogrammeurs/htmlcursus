@@ -1,0 +1,20 @@
+*{
+    box-sizing:border-box;
+}
+
+#bloka,#blokb,#blokc{
+    height:200px;
+    width:200px;
+}
+#bloka{
+    background:red;
+    float:left;
+}
+#blokb{
+    background: yellow;
+    float:right;
+}
+#blokc{
+    background: orange;
+    float:right;
+}

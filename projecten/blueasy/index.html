@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Project blueasy html leren" name="description"> <!-- max 160 karakters -->
+    <meta content="css, html, blueasy" name="keywords">
+    <!-- minimaal 5 en maximaal 13 keer-->
+    <meta content="Tom Vanhoutte" name="author">
+    <meta content="index,follow" name="robots">
+    <meta content="blueasy" property="og:title">
+    <meta content="Project blueasy html leren" property="og:description">
+    <meta content="http://images/test.jpg" property="og:image">
+    <meta content="blueasy" name="twitter:title">
+    <meta content="Project blueasy html leren" property="twitter:description">
+    <meta content="http://images/test.jpg" property="twitter:image">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blueasy</title>
+</head>
+<body>
+
+<header id="fullheader">
+    <div id="headertop">
+        <nav class="d-flex justify-content-between">
+            <p id="brand">BLU<span>E</span>ASY</p>
+            <ul class="d-flex justify-content-around w-60
+    ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="hero" class="d-flex flex-column align-items-center">
+        <div>
+            <p class="text-center">I'm looking for the unexpected.</p>
+        </div>
+        <div>
+            <p class="text-center">I'm looking for things I've never seen before</p>
+        </div>
+    </section>
+</header>
+<main>
+    <section id="services"> <!--   breedte van 1920-->
+
+        <div id="serviceswrapper" class="d-flex flex-column justify-content-center"><!--   breedte van 1175-->
+            <div>
+                <h1><span>Ser</span>vices</h1>
+
+            </div>
+
+            <div class="d-flex">
+                <article>
+                    <img src="images/cup.png" alt="cup image">
+                    <header>
+                        <h2>coffee</h2>
+                    </header>
+                    <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
+                        Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                </article>
+                <article>
+                    <img src="images/instant.png" alt="instant image">
+                    <header>
+                        <h2>instant</h2>
+                    </header>
+                    <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
+                        Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                </article>
+                <article>
+                    <img src="images/serious.png" alt="cup image">
+                    <header>
+                        <h2>serious</h2>
+                    </header>
+                    <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
+                        Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                </article>
+                <article>
+                    <img src="images/frame.png" alt="cup image">
+                    <header>
+                        <h2>frame</h2>
+                    </header>
+                    <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
+                        Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+    <section id="default">
+        <div id="defaultcontent">
+            <article class="d-flex">
+                <div>
+                    <h2>JUST DEFAULT SECTION</h2>
+                    <p id="topp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus ducimus eaque
+                        exercitationem ipsa modi natus odit perferendis reiciendis sunt? Ad animi assumenda beatae
+                        dignissimos esse laudantium nobis pariatur repudiandae.</p>
+                    <p id="bottomp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium cupiditate, deserunt earum eos et exercitationem fuga, illum labore laboriosam laborum, molestias obcaecati quisquam temporibus totam unde vero vitae voluptates!</p>
+                    <div id="line"></div>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BuljO3qIfFA?si=zlrwP4B5gcVnfPpL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="contactwrapper"  class="d-flex justify-content-between">
+            <address>
+                Website: <a href="https://syntrawest.be" target="_blank">syntrawest</a><br>
+                Oostnieuwkerksesteenweg 111<br>
+                8800 Roeselare<br>
+                BTW NR: BE 000000000
+                <p><a href="tel:0032473222222">0473222222</a></p>
+                <p><a href="mailto:info@syntrawest.be">Stuur een mailtje</a></p>
+                <img src="images/syntrawest.png" alt="syntra west">
+            </address>
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="onderwerp">Onderwerp</label>
+                        <select id="onderwerp" name="onderwerp" required>
+                            <option value="" disabled selected>Kies hier</option>
+                            <option value="grafisch_design">Grafisch Design</option>
+                            <option value="ui_ux">UI/UX</option>
+                            <option value="website">Website</option>
+                            <option value="webdesign">Webdesign</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="beschrijving">Beschrijving</label>
+                        <textarea id="beschrijving" placeholder="Voer hier uw beschrijving in" cols="100" required></textarea>
+                    </div>
+
+                    <div class="form-group d-flex justify-content-around">
+
+                        <div>
+                            <label>Opties</label>
+                            <div class="d-flex">
+                                <input type="radio" name="mijngroep">
+                                <label>A</label>
+                            </div>
+                            <div class="d-flex">
+                                <input type="radio" name="mijngroep">
+                                <label>B</label>
+                            </div>
+                            <div class="d-flex">
+                                <input type="radio" name="mijngroep">
+                                <label>C</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Opties</label>
+                            <div class="d-flex">
+                                <input type="checkbox">
+                                <label>A</label>
+                            </div>
+                            <div class="d-flex">
+                                <input type="checkbox">
+                                <label>B</label>
+                            </div>
+                            <div class="d-flex">
+                                <input type="checkbox">
+                                <label>C</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Versturen</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</main>
+<footer>
+
+</footer>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
